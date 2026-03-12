@@ -1,0 +1,118 @@
+{
+  "projectType": "saas",
+  "projectName": "ClawHub",
+  "projectDescription": "Public skill registry for AI agents with versioning, search, and CLI management.",
+  "theme": "palm",
+  "primaryColor": "#f14e29",
+  "lightColor": "#f9d5cd",
+  "darkColor": "#312824",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "vision"
+            ]
+          },
+          {
+            "group": "Using ClawHub",
+            "pages": [
+              "using/skills",
+              "using/cli",
+              "using/search",
+              "using/souls"
+            ]
+          },
+          {
+            "group": "Publishing",
+            "pages": [
+              "publishing/overview",
+              "publishing/skill-format",
+              "publishing/versioning",
+              "publishing/sync"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/architecture",
+              "platform/deployment",
+              "platform/security",
+              "platform/telemetry"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/troubleshooting",
+              "resources/contributing",
+              "resources/changelog"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/introduction",
+              "api/authentication",
+              "api/rate-limits"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/skills",
+              "api/search",
+              "api/download",
+              "api/stars",
+              "api/transfers",
+              "api/users"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Publish and version AI agent skills with semantic versioning",
+    "Vector-based search using OpenAI embeddings",
+    "CLI for installing, updating, and syncing skills",
+    "Security scanning and moderation pipeline",
+    "Star and comment system for community engagement",
+    "Transfer skill ownership between users",
+    "GitHub OAuth authentication with API tokens",
+    "Telemetry and analytics for install tracking"
+  ],
+  "publicApiSurface": [
+    "GET /api/v1/skills",
+    "GET /api/v1/skills/{slug}",
+    "GET /api/v1/skills/{slug}/versions",
+    "GET /api/v1/search",
+    "GET /api/v1/download",
+    "POST /api/v1/skills",
+    "DELETE /api/v1/skills/{slug}",
+    "POST /api/v1/skills/{slug}/undelete",
+    "POST /api/v1/stars/{slug}",
+    "DELETE /api/v1/stars/{slug}",
+    "POST /api/v1/skills/{slug}/transfer",
+    "GET /api/v1/whoami",
+    "POST /api/v1/users/ban",
+    "POST /api/v1/users/role",
+    "clawhub login",
+    "clawhub search",
+    "clawhub install",
+    "clawhub publish",
+    "clawhub sync",
+    "clawhub update",
+    "clawhub transfer"
+  ]
+}
